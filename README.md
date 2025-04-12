@@ -4,7 +4,7 @@ Dockerized Jellyfin server with Tailscale automatic creation files
 # Step by step guide
 
 * Go to [Tailscale website](https://tailscale.com/)
-* Create or login your existing account
+* Create an account or login your existing account
 * Go to [keys settings](https://login.tailscale.com/admin/settings/keys)
 * Click Generate auth key… button
 * Add key to config file in: TAILSCALE_AUTH_KEY variable
