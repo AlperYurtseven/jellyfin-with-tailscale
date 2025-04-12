@@ -18,7 +18,7 @@ def read_config(file_path):
 def generate_docker_compose(config):
 
     server_name = config.get("SERVER_NAME").replace('"', '').lower()
-    tailscale_user_key = config.get("TAILSCALE_USER_KEY").replace('"', '').lower()
+    tailscale_user_key = config.get("TAILSCALE_USER_KEY").replace('"', '').lower().split(".")[0]
     domain = f"{server_name}.{tailscale_user_key}.ts.net"
     tailscale_auth_key = config.get("TAILSCALE_AUTH_KEY").replace('"', '')
 
@@ -86,7 +86,7 @@ def generate_docker_compose(config):
 def generate_funnel_json(config):
     """Generates the funnel.json file."""
     server_name = config.get("SERVER_NAME")
-    tailscale_user_key = config.get("TAILSCALE_USER_KEY")
+    tailscale_user_key = config.get("TAILSCALE_USER_KEY").split(".")[0]
     domain = f"{server_name}.{tailscale_user_key}.ts.net"
     tailscale_funnel = config.get("TAILSCALE_FUNNEL", "false").lower() == "false"
 
