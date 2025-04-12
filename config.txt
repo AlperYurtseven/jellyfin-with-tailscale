@@ -1,0 +1,14 @@
+# Create new one if you do not have
+TAILSCALE_AUTH_KEY = "YOUR_AUTH_KEY"
+
+# Can be found in admin panel starts with "tail" ex: tail31aa69
+TAILSCALE_USER_KEY = "YOUR_USER_NAME" 
+
+# Use true if you want to open your jellyfin to internet, keep it false otherwise. It is your responsibility
+TAILSCALE_FUNNEL = "false"
+
+SERVER_NAME = "YOUR_SERVER_NAME"
+
+# You can give more than one folder for each if needed
+MOVIES_FOLDERS = "/YOUR/MOVIES/FOLDER/PATH/1", "/YOUR/MOVIES/FOLDER/PATH/2"
+SERIES_FOLDERS = "/YOUR/SERIES/FOLDER/PATH/1", "/YOUR/SERIES/FOLDER/PATH/2"
