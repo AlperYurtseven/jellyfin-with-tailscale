@@ -3,12 +3,12 @@ Dockerized Jellyfin server with Tailscale automatic creation files
 
 # Step by step guide
 
-* Go to [text](https://tailscale.com/)
+* Go to [Tailscale website](https://tailscale.com/)
 * Create or login your existing account
-* Go to [text](https://login.tailscale.com/admin/settings/keys)
+* Go to [keys settings](https://login.tailscale.com/admin/settings/keys)
 * Click Generate auth key… button
 * Add key to config file in: TAILSCALE_AUTH_KEY variable
-* Go to [text](https://login.tailscale.com/admin/dns)
+* Go to [dns settings](https://login.tailscale.com/admin/dns)
 * Find your Tailnet username (starts with tail...)
 * Add Tailnet username to config file in: TAILSCALE_USER_KEY variable
 * (Optional) set TAILSCALE_FUNNEL variable in config file to true if you want to make your server accessible outside the tailscale network (i.e. open to public internet)
